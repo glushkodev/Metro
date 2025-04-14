@@ -1,1 +1,1 @@
-This is my first SPA website, built as an e-commerce store Metro.
+This is my first SPA website, built as a minimalist online store Metro.
