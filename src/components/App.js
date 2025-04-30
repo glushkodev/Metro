@@ -55,7 +55,7 @@ class App {
 			let hash = location.hash;
 
 			if (!hash) {
-				page = 'home';
+				page = 'Home';
 			} else {
 				hash = hash.slice(1);
 				
@@ -66,9 +66,10 @@ class App {
 			
 			if (!page) page = '404';
 			
-			let timestamp = new Date().getTime();
+			// let timestamp = new Date().getTime();
 
-			let elem = await import(`../pages/${page}.js?v=${timestamp}`)
+			// let elem = await import(`src/pages/${page}.js?v=${timestamp}`)
+			let elem = await import(`../pages/${page}.js`)
 			.then(module => {
 				mainTitle.innerHTML = '';
 				mainContainer.innerHTML = '';
