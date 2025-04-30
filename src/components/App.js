@@ -50,36 +50,42 @@ class App {
 
 	router() {
 		let getPage = async () => {
-			let page;
-
-			let hash = location.hash;
-
-			if (!hash) {
-				page = 'Home';
-			} else {
-				hash = hash.slice(1);
-				
-				let hashItems = hash.split('/');
-
-				if (hashItems[0]) page = hashItems[0];
+			let page = 'Home'; 
+			let hash = window.location.hash.slice(1);
+			
+			if (hash) {
+				let [pageName] = hash.split('/');
+				if (pageName) {
+					page = pageName.charAt(0).toUpperCase() + pageName.slice(1);
+				}
 			}
-			
-			if (!page) page = '404';
-			
-			// let timestamp = new Date().getTime();
-
-			// let elem = await import(`src/pages/${page}.js?v=${timestamp}`)
-			let elem = await import(`../pages/${page}.js`)
-			.then(module => {
+	
+			try {
+				let module = await import(`../pages/${page}.js`);
+				
 				mainTitle.innerHTML = '';
 				mainContainer.innerHTML = '';
-
+				
 				document.title = module.pageTitle;
-
-				mainTitle.innerHTML = module.pageTitle;
-				mainContainer.append(module.page);
-			})
-		}
+				mainTitle.textContent = module.pageTitle;
+				
+				mainContainer.appendChild(module.page);
+			} catch (error) {
+				console.error('Ошибка загрузки страницы:', error);
+				
+				try {
+					let module = await import('../pages/Home.js');
+					mainTitle.innerHTML = '';
+					mainContainer.innerHTML = '';
+					document.title = module.pageTitle || 'Store App';
+					mainTitle.textContent = module.pageTitle || 'Home';
+					mainContainer.appendChild(module.page);
+				} catch (fallbackError) {
+					console.error('Ошибка загрузки fallback-страницы:', fallbackError);
+					mainContainer.innerHTML = '<p>Ошибка загрузки страницы</p>';
+				}
+			}
+		};
 
 		let links = document.querySelectorAll('a[href="/"]');
 
@@ -87,7 +93,7 @@ class App {
 			link.addEventListener('click', (e) => {
 				e.preventDefault();
 
-				history.pushState(null, null, '/'); //при нажатии на ссылку на домашнюю страницу очищает адресную строку
+				history.pushState(null, null, '/'); 
 				getPage();
 			})
 		});
