@@ -31,7 +31,7 @@ class Page {
 					contactsMainLeftAdr.classList.add('contacts__main_left_item');
 						let contactsMainLeftAdrIco = document.createElement('img');
 						contactsMainLeftAdrIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftAdrIco.src = `/src/images/ico_location.svg`;
+						contactsMainLeftAdrIco.src = `src/images/ico_location.svg`;
 						contactsMainLeftAdrIco.alt = `ico_location`;
 
 						let contactsMainLeftAdrTitle = document.createElement('span');
@@ -49,7 +49,7 @@ class Page {
 
 						let contactsMainLeftEmailIco = document.createElement('img');
 						contactsMainLeftEmailIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftEmailIco.src = `/src/images/ico_letter.svg`;
+						contactsMainLeftEmailIco.src = `src/images/ico_letter.svg`;
 						contactsMainLeftEmailIco.alt = `ico_letter`;
 
 						let contactsMainLeftEmailTitle = document.createElement('span');
@@ -66,7 +66,7 @@ class Page {
 
 						let contactsMainLeftPhoneIco = document.createElement('img');
 						contactsMainLeftPhoneIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftPhoneIco.src = `/src/images/ico_phone.svg`;
+						contactsMainLeftPhoneIco.src = `src/images/ico_phone.svg`;
 						contactsMainLeftPhoneIco.alt = `ico_phone`;
 
 						let contactsMainLeftPhoneTitle = document.createElement('span');
@@ -83,7 +83,7 @@ class Page {
 
 						let contactsMainLeftTextIco = document.createElement('img');
 						contactsMainLeftTextIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftTextIco.src = `/src/images/ico_contact.svg`;
+						contactsMainLeftTextIco.src = `src/images/ico_contact.svg`;
 						contactsMainLeftTextIco.alt = `ico_contact`;
 
 						let contactsMainLeftTextTitle = document.createElement('span');
@@ -97,7 +97,7 @@ class Page {
 				let contactsMainMap = document.createElement('div');
 				contactsMainMap.classList.add('contacts__main_map');
 				contactsMainMap.innerHTML = `
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16231.444875991585!2d27.52411811173309!3d52.78957696592863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1744371459746!5m2!1sru!2sby" width="100%;" height="450px;" ></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96715.64015078463!2d-73.93836576791607!3d40.754023549820396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1746000578152!5m2!1sru!2sby" width="100%;" height="450px;"></iframe>
 				`
 
 		contactsMainLeftText.append(contactsMainLeftTextIco, contactsMainLeftTextTitle, contactsMainLeftTextDesc);

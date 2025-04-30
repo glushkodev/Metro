@@ -44,7 +44,7 @@ class Page {
 
 						let homeAdvBtmItemImg1 = document.createElement('img');
 						homeAdvBtmItemImg1.classList.add('home__adv_btm_item_img');
-						homeAdvBtmItemImg1.src = `/src/images/home_selection.png`;
+						homeAdvBtmItemImg1.src = `src/images/home_selection.png`;
 						homeAdvBtmItemImg1.alt = `ico_selection`;
 
 						let homeAdvBtmItemTitle1 = document.createElement('div');
@@ -60,7 +60,7 @@ class Page {
 
 						let homeAdvBtmItemImg2 = document.createElement('img');
 						homeAdvBtmItemImg2.classList.add('home__adv_btm_item_img');
-						homeAdvBtmItemImg2.src = `/src/images/home_secure.png`;
+						homeAdvBtmItemImg2.src = `src/images/home_secure.png`;
 						homeAdvBtmItemImg2.alt = `ico_secure`;
 
 						let homeAdvBtmItemTitle2 = document.createElement('div');
@@ -76,7 +76,7 @@ class Page {
 
 						let homeAdvBtmItemImg3 = document.createElement('img');
 						homeAdvBtmItemImg3.classList.add('home__adv_btm_item_img');
-						homeAdvBtmItemImg3.src = `/src/images/home_rocket.png`;
+						homeAdvBtmItemImg3.src = `src/images/home_rocket.png`;
 						homeAdvBtmItemImg3.alt = `ico_rocket`;
 
 						let homeAdvBtmItemTitle3 = document.createElement('div');
@@ -92,7 +92,7 @@ class Page {
 
 						let homeAdvBtmItemImg4 = document.createElement('img');
 						homeAdvBtmItemImg4.classList.add('home__adv_btm_item_img');
-						homeAdvBtmItemImg4.src = `/src/images/home_exclusive.png`;
+						homeAdvBtmItemImg4.src = `src/images/home_exclusive.png`;
 						homeAdvBtmItemImg4.alt = `ico_exclusive`;
 
 						let homeAdvBtmItemTitle4 = document.createElement('div');

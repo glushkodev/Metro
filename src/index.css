@@ -177,12 +177,10 @@ main {
 .main__title {
 	text-align: center;
 	padding: 60px 0;
-	background-image: url(/src/images/main_bg.jpg);
+	background-image: url(../src/images/main_bg.jpg);
 	background-size: cover;
 	background-position: center;
-
 	box-shadow: 0 0 10px 2px #ccc;
-
 	margin-bottom: 40px;
 }
 
@@ -274,8 +272,6 @@ main {
 }
  
 .product__item_img {
-	/* width: 90%;
-	 */
 	 width: 450px;
 }
 

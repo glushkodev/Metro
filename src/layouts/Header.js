@@ -22,7 +22,7 @@ class Header {
 		link.href = "/";
 
 			let logoImg = document.createElement('img');
-			logoImg.src = "/src/images/logo_black.png";
+			logoImg.src = "src/images/logo_black.png";
 			logoImg.alt = "logo";
 
 		link.append(logoImg);

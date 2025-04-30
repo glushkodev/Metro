@@ -28,11 +28,11 @@ class App {
 
 		let linkElem = document.createElement('link');
 		linkElem.rel = 'stylesheet';
-		linkElem.href = '/src/index.css';
+		linkElem.href = 'src/index.css';
 
 		let linkMediaElem = document.createElement('link');
 		linkMediaElem.rel = 'stylesheet';
-		linkMediaElem.href = '/src/media.css';
+		linkMediaElem.href = 'src/media.css';
 
 		let linkFontElem = document.createElement('link');
 		linkFontElem.rel = 'stylesheet';
