@@ -19,7 +19,7 @@ class Footer {
 		link.href = "/";
 
 			let img = document.createElement('img');
-			img.src = "src/images/logo_black.png";
+			img.src = "/Metro/src/images/logo_black.png";
 			img.alt = "#";
 
 		link.appendChild(img);
@@ -37,7 +37,7 @@ class Footer {
 
 			let contactsItemImg1 = document.createElement('img');
 			contactsItemImg1.classList.add('footer__contacts_ico');
-			contactsItemImg1.src = "src/images/ico_location.svg";
+			contactsItemImg1.src = "/Metro/src/images/ico_location.svg";
 			contactsItemImg1.alt = "location";
 
 			let contactsItemLink1 = document.createElement('a');
@@ -51,7 +51,7 @@ class Footer {
 
 			let contactsItemImg2 = document.createElement('img');
 			contactsItemImg2.classList.add('footer__contacts_ico');
-			contactsItemImg2.src = "src/images/ico_phone.svg";
+			contactsItemImg2.src = "/Metro/src/images/ico_phone.svg";
 			contactsItemImg2.alt = "phone";
 
 			let contactsItemLink2 = document.createElement('a');
@@ -64,7 +64,7 @@ class Footer {
 
 			let contactsItemImg3 = document.createElement('img');
 			contactsItemImg3.classList.add('footer__contacts_ico');
-			contactsItemImg3.src = "src/images/ico_letter.svg";
+			contactsItemImg3.src = "/Metro/src/images/ico_letter.svg";
 			contactsItemImg3.alt = "letter";
 
 			let contactsItemLink3 = document.createElement('a');

@@ -1,7 +1,7 @@
-import { header } from './layouts/Header.js';
-import { main, mainContainer, mainTitle } from './layouts/Main.js';
-import { footer } from './layouts/Footer.js';
-import { cartUpdate } from "./Cart.js";
+import { header } from '/Metro/src/layouts/Header.js';
+import { main, mainContainer, mainTitle } from '/Metro/src/layouts/Main.js';
+import { footer } from '/Metro/src/layouts/Footer.js';
+import { cartUpdate } from "/Metro/src/components/Cart.js";
 
 class App {
 	constructor() {
@@ -68,7 +68,7 @@ class App {
 			
 			let timestamp = new Date().getTime();
 
-			let elem = await import(`./pages/${page}.js?v=${timestamp}`)
+			let elem = await import(`/Metro/src/pages/${page}.js?v=${timestamp}`)
 			.then(module => {
 				mainTitle.innerHTML = '';
 				mainContainer.innerHTML = '';
