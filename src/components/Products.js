@@ -1,4 +1,4 @@
-import { cartAdd } from "/Metro/src/components/Cart.js";
+import { cartAdd } from "./Cart.js";
 
 class Products {
 	create() {

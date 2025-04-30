@@ -1,4 +1,4 @@
-import { cartGet, cartRemove, cartUpdate } from "/Metro/src/components/Cart.js";
+import { cartGet, cartRemove, cartUpdate } from "../components/Cart.js";
 
 class Page {
 	constructor() {
@@ -106,7 +106,7 @@ class Page {
 
 				let cartDelImg = document.createElement('img');
 				cartDelImg.classList.add('cart__delete_img');
-				cartDelImg.src = `/Metro/src/images/ico_delete.svg`;
+				cartDelImg.src = `../images/ico_delete.svg`;
 				cartDelImg.alt = `ico-delete`;
 
 			let cartQuantity = document.createElement('div');

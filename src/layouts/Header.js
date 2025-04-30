@@ -1,5 +1,5 @@
-import { nav } from '/Metro/src/layouts/Nav.js';
-import { cartWidget } from '/Metro/src/components/CartWidget.js';
+import { nav } from './Nav.js';
+import { cartWidget } from '../components/CartWidget.js';
 
 class Header {
 	create() {
@@ -22,7 +22,7 @@ class Header {
 		link.href = "/";
 
 			let logoImg = document.createElement('img');
-			logoImg.src = "/Metro/src/images/logo_black.png";
+			logoImg.src = "src/images/logo_black.png";
 			logoImg.alt = "logo";
 
 		link.append(logoImg);

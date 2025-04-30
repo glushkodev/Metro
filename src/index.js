@@ -1,1 +1,1 @@
-import '/Metro/src/components/App.js';
+import './components/App.js';
