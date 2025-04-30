@@ -1,4 +1,4 @@
-import { cartGet, cartRemove, cartUpdate } from "../components/Cart.js";
+import { cartGet, cartRemove, cartUpdate } from "./components/Cart.js";
 
 class Page {
 	constructor() {

@@ -1,4 +1,4 @@
-import { products } from '../components/Products.js';
+import { products } from './components/Products.js';
 
 class Page {
 	constructor() {

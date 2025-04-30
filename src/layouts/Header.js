@@ -1,5 +1,5 @@
 import { nav } from './Nav.js';
-import { cartWidget } from '../components/CartWidget.js';
+import { cartWidget } from './components/CartWidget.js';
 
 class Header {
 	create() {

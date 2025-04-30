@@ -1,6 +1,6 @@
-import { header } from '../layouts/Header.js';
-import { main, mainContainer, mainTitle } from '../layouts/Main.js';
-import { footer } from '../layouts/Footer.js';
+import { header } from './layouts/Header.js';
+import { main, mainContainer, mainTitle } from './layouts/Main.js';
+import { footer } from './layouts/Footer.js';
 import { cartUpdate } from "./Cart.js";
 
 class App {
@@ -68,7 +68,7 @@ class App {
 			
 			let timestamp = new Date().getTime();
 
-			let elem = await import(`../pages/${page}.js?v=${timestamp}`)
+			let elem = await import(`./pages/${page}.js?v=${timestamp}`)
 			.then(module => {
 				mainTitle.innerHTML = '';
 				mainContainer.innerHTML = '';

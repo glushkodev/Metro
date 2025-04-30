@@ -1,4 +1,4 @@
-import { cartAdd } from "../components/Cart.js";
+import { cartAdd } from "./components/Cart.js";
 
 class Page {
 	constructor() {
