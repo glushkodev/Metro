@@ -106,7 +106,7 @@ class Page {
 
 				let cartDelImg = document.createElement('img');
 				cartDelImg.classList.add('cart__delete_img');
-				cartDelImg.src = `../images/ico_delete.svg`;
+				cartDelImg.src = `src/images/ico_delete.svg`;
 				cartDelImg.alt = `ico-delete`;
 
 			let cartQuantity = document.createElement('div');
