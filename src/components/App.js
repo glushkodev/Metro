@@ -2,6 +2,8 @@ import { header } from '../layouts/Header.js';
 import { main, mainContainer, mainTitle } from '../layouts/Main.js';
 import { footer } from '../layouts/Footer.js';
 import { cartUpdate } from "./Cart.js";
+import '../index.css';
+import '../media.css';
 
 class App {
 	constructor() {

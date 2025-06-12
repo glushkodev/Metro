@@ -20,7 +20,7 @@ class CartWidget {
 			widgetItemLink.innerHTML = `${counterElem.outerHTML}`;
 
 				let widgetItemImg = document.createElement('img');
-				widgetItemImg.src = 'src/images/ico_cart.png';
+				widgetItemImg.src = '/images/ico_cart.png';
 				widgetItemImg.alt = 'cart';
 
 		let widgetItem2 = document.createElement('div');

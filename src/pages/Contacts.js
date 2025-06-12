@@ -31,7 +31,7 @@ class Page {
 					contactsMainLeftAdr.classList.add('contacts__main_left_item');
 						let contactsMainLeftAdrIco = document.createElement('img');
 						contactsMainLeftAdrIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftAdrIco.src = `src/images/ico_location.svg`;
+						contactsMainLeftAdrIco.src = `/images/ico_location.svg`;
 						contactsMainLeftAdrIco.alt = `ico_location`;
 
 						let contactsMainLeftAdrTitle = document.createElement('span');
@@ -49,7 +49,7 @@ class Page {
 
 						let contactsMainLeftEmailIco = document.createElement('img');
 						contactsMainLeftEmailIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftEmailIco.src = `src/images/ico_letter.svg`;
+						contactsMainLeftEmailIco.src = `/images/ico_letter.svg`;
 						contactsMainLeftEmailIco.alt = `ico_letter`;
 
 						let contactsMainLeftEmailTitle = document.createElement('span');
@@ -66,7 +66,7 @@ class Page {
 
 						let contactsMainLeftPhoneIco = document.createElement('img');
 						contactsMainLeftPhoneIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftPhoneIco.src = `src/images/ico_phone.svg`;
+						contactsMainLeftPhoneIco.src = `/images/ico_phone.svg`;
 						contactsMainLeftPhoneIco.alt = `ico_phone`;
 
 						let contactsMainLeftPhoneTitle = document.createElement('span');
@@ -83,7 +83,7 @@ class Page {
 
 						let contactsMainLeftTextIco = document.createElement('img');
 						contactsMainLeftTextIco.classList.add('contacts__main_left_item_img');
-						contactsMainLeftTextIco.src = `src/images/ico_contact.svg`;
+						contactsMainLeftTextIco.src = `/images/ico_contact.svg`;
 						contactsMainLeftTextIco.alt = `ico_contact`;
 
 						let contactsMainLeftTextTitle = document.createElement('span');

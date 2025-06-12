@@ -140,6 +140,7 @@ main {
 
 .cart__delete_btn {
 	border: none;
+	background: transparent;
 }
 
 .cart__delete_img {
